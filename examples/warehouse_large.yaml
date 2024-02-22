@@ -1,0 +1,68 @@
+processes:
+  inbound trailer:
+    output:
+      pallet: 1
+    time: 400
+
+  unloading:
+    input:
+      pallet: 1
+    output:
+      box: 5
+    time: 10
+
+  autostorage:
+    input:
+      box: 1
+    output:
+      bag: 5
+    time: 5
+
+  order packing:
+    input:
+      bag: 10
+      empty box: 1
+    output:
+      packed box: 1
+    time: 5
+
+  order labeling:
+    input:
+      packed box: 1
+    output:
+      labelled box: 1
+    time: 5
+
+  outbound trailer:
+    input:
+      labeled box: 20
+    time: 10
+
+  box storage:
+    output:
+      box materials: 1
+    time: 100
+
+  box maker:
+    input:
+      box materials: 5
+    output:
+      empty box: 5
+    time: 100
+
+movers:
+  forklift:
+    speed: 5
+    capacity: 5
+  person: 
+    speed: 5
+    capacity: 4
+  small cart: 
+    speed: 5
+    capacity: 10
+  large cart:
+    capacity: 20
+    speed: 15
+
+
+

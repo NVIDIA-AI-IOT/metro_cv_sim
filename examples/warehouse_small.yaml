@@ -1,0 +1,38 @@
+processes:
+  Inbound Shipping:
+    output:
+      pallet: 1
+    time: 20
+
+  Pallet Unloading:
+    input:
+      pallet: 1
+    output:
+      bottle: 20
+    time: 20
+
+  Order Packing:
+    input:
+      bottle: 5
+    output:
+      packed box: 1
+    time: 20
+
+  Outbound Shipping:
+    input:
+      packed box: 20
+    time: 100
+
+movers:
+  Forklift:
+    speed: 5
+    capacity: 2
+
+  Small Cart:
+    speed: 3
+    capacity: 5
+
+  Large Cart:
+    speed: 5
+    capacity: 10
+

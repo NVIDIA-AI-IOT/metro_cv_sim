@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2024-02-07T17:44:49.568Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="TZs-6LTxbtjgkhsjNB8H" version="23.0.2" type="device">
+  <diagram name="Page-1" id="nS755XhSGdc-bxm6WSxO">
+    <mxGraphModel dx="1450" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-14" value="Inbound Shipping" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="110" y="70" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-15" value="Pallet Unloading" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="620" y="70" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-16" value="Order Packing" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="620" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-17" value="Outbound Shipping" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="120" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-18" value="Forklift" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="f2z10a0N1L5sIaTw0Mko-14" target="f2z10a0N1L5sIaTw0Mko-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="340" as="sourcePoint" />
+            <mxPoint x="550" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-21" value="Small Cart" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="f2z10a0N1L5sIaTw0Mko-16" target="f2z10a0N1L5sIaTw0Mko-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="340" as="sourcePoint" />
+            <mxPoint x="550" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-29" value="camera:shipping" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry y="10" width="320" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-30" value="roi:inbound" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f2z10a0N1L5sIaTw0Mko-29" vertex="1">
+          <mxGeometry x="60" y="30" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-31" value="roi:outbound" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f2z10a0N1L5sIaTw0Mko-29" vertex="1">
+          <mxGeometry x="60" y="310" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-32" value="camera:pallet storage" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="510" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-33" value="camera:order packing" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="470" y="290" width="320" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="f2z10a0N1L5sIaTw0Mko-34" value="roi:order outputs" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f2z10a0N1L5sIaTw0Mko-33" vertex="1">
+          <mxGeometry x="40" y="70" width="125" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SCZbLwPJPW_RNx1RrWiz-1" value="Large Cart" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="f2z10a0N1L5sIaTw0Mko-15" target="f2z10a0N1L5sIaTw0Mko-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="260" as="sourcePoint" />
+            <mxPoint x="510" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
